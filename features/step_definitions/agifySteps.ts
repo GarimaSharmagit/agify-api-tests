@@ -38,7 +38,7 @@ Then('the response should return an error', function () {
 });
 
 // Step 6: Validate response structure
-Then('the response should contain {string}, {string}, and {string}', function (nameKey: string, ageKey: string, countKey: string) {
+Then('the response should contain {string}, {string}', function (nameKey: string, ageKey: string) {
   expect(response.status).to.equal(200);
-  expect(response.data).to.have.all.keys(nameKey, ageKey, countKey);
+  expect(response.data).to.have.all.keys(nameKey, ageKey, );
 });
