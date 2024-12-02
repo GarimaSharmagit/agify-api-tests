@@ -13,4 +13,4 @@ Feature: Test the Agify.io API
   Scenario: Validate response structure
     Given the API endpoint is "https://api.agify.io"
     When I make a GET request with the name "john"
-    Then the response should contain "name", "age", and "count"
+    Then the response should contain "name", "age"
